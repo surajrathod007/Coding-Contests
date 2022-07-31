@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allContestFragment">
+
+    <fragment
+        android:id="@+id/allContestFragment"
+        android:name="com.surajrathod.codingcontests.ui.AllContestFragment"
+        android:label="fragment_all_contest"
+        tools:layout="@layout/fragment_all_contest" >
+        <action
+            android:id="@+id/action_allContestFragment_to_contestCategoryFragment"
+            app:destination="@id/contestCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contestCategoryFragment"
+        android:name="com.surajrathod.codingcontests.ui.ContestCategoryFragment"
+        android:label="fragment_contest_category"
+        tools:layout="@layout/fragment_contest_category" >
+        <action
+            android:id="@+id/action_contestCategoryFragment_to_savedContestFragment"
+            app:destination="@id/savedContestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedContestFragment"
+        android:name="com.surajrathod.codingcontests.ui.SavedContestFragment"
+        android:label="fragment_saved_contest"
+        tools:layout="@layout/fragment_saved_contest" />
+</navigation>

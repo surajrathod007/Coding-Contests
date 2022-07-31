@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/example_widget_item_text"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/gradient"
+    android:text="Item"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:gravity="center">
+
+
+</TextView>

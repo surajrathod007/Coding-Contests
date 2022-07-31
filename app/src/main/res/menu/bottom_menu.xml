@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_icons8_home_24"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/tab_category"
+        android:icon="@drawable/ic_baseline_code_24"
+        android:title="Category"
+        />
+
+    <item
+        android:id="@+id/tab_saved"
+        android:icon="@drawable/ic_baseline_child_care_24"
+        android:title="Saved"
+        />
+</menu>

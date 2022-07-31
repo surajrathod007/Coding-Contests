@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/example_widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Widget"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/white"
+       />
+
+    <Button
+        android:id="@+id/example_widget_btn"
+        android:text="Press Me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <StackView
+            android:id="@+id/example_widget_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:loopViews="true"/>
+
+        <TextView
+            android:id="@+id/example_widget_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/royalBlue"
+            android:text="Empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+</LinearLayout>
