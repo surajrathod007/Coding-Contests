@@ -15,6 +15,8 @@ class ContestRepo {
 
     var _loading = MutableLiveData<Boolean>()
 
+    var mutableProgress = MutableLiveData<Boolean>(true)
+
     init {
         loadContest()
     }
@@ -32,6 +34,7 @@ class ContestRepo {
             val l = NetworkService.apiInterface.getAllSites()
             _mutalbeAllContest.postValue(l)
             _loading.postValue(true)
+            mutableProgress.postValue(false)
         }
     }
 }

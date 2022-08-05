@@ -34,7 +34,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteLeetCode"
@@ -56,9 +59,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteHackerRank"
@@ -80,9 +86,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteHackerEarth"
@@ -104,9 +113,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteCodeForces"
@@ -128,9 +140,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteAtCoder"
@@ -152,9 +167,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteCodeChef"
@@ -176,9 +194,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteCsAcademy"
@@ -200,9 +221,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteSpoj"
@@ -224,9 +248,12 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
+                    app:strokeColor="@color/boldColor"
+                    app:strokeWidth="1dp"
+                    app:cardElevation="0dp"
                     android:clickable="true"
                     android:foreground="?attr/selectableItemBackground"
                     android:id="@+id/siteTopCoder"
@@ -248,7 +275,7 @@
                             android:layout_height="60dp" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>

@@ -48,5 +48,36 @@
             android:layout_height="0dp"
             tools:listitem="@layout/contest_item" />
 
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/not_found"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/not_found_search"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="visible"
+            android:id="@+id/loading_list"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/loading_search"
+            android:layout_width="400dp"
+            android:layout_height="400dp"/>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

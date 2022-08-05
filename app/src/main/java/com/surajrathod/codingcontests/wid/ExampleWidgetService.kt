@@ -11,7 +11,7 @@ import com.surajrathod.codingcontests.R
 class ExampleWidgetService : RemoteViewsService() {
 
     override fun onGetViewFactory(intent: Intent): RemoteViewsFactory {
-        return ExampleWidgetItemFactory(applicationContext,intent)
+        return ExampleWidgetItemFactory(this.applicationContext,intent)
     }
 
     inner class ExampleWidgetItemFactory(val context : Context,val intent : Intent) : RemoteViewsFactory{
@@ -48,7 +48,7 @@ class ExampleWidgetService : RemoteViewsService() {
         }
 
         override fun getLoadingView(): RemoteViews {
-            TODO("Not yet implemented")
+            return RemoteViews(context.packageName,R.layout.example_widget_item)
         }
 
         override fun getViewTypeCount(): Int {

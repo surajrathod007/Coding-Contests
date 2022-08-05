@@ -14,6 +14,8 @@ class ContestViewModel(val repo : ContestRepo) : ViewModel() {
     get() = _mutableSites
 
 
+
+
     init {
         _mutableSites.postValue(repo.AllContest.value)
     }

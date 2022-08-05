@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.surajrathod.codingcontests.R
 import com.surajrathod.codingcontests.adapter.ContestAdapter
 import com.surajrathod.codingcontests.db.ContestDatabase
@@ -22,6 +23,7 @@ class AllContestFragment : Fragment() {
     val repo = ContestRepo()
     lateinit var rv : RecyclerView
     lateinit var contestdb : ContestDatabase
+    lateinit var loading : LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +40,13 @@ class AllContestFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_all_contest, container, false)
 
         rv = view.findViewById(R.id.rv_All_Contest)
+        loading = view.findViewById(R.id.loading)
+
+        repo.mutableProgress.observe(viewLifecycleOwner,{
+            if(!it){
+                loading.visibility = View.GONE
+            }
+        })
 
         viewModel.getAllSites().observe(viewLifecycleOwner,{
             rv.adapter = ContestAdapter(it,this.requireContext(), contestdb)
