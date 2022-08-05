@@ -17,7 +17,7 @@ An app for coders to track or get all information about coding contest from all 
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/uc?id=16dfXbWUQrZJquC8HhHeaXf64ZS-m9Dd7))
+![App Screenshot](https://drive.google.com/uc?id=16dfXbWUQrZJquC8HhHeaXf64ZS-m9Dd7)
 
 
 ## Tech Stack
